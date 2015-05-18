@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Game of Life">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GameLife</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/sha1.js"></script>
+        <script src="js/grid.min.js"></script>
+        <script src="js/game_of_life.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Game of Life</h1>
+                </div>
+               
+            </div>
+            <div class="row">
+                 <div class="col-md-1 top20">
+                    <button class="btn btn-success" id="play">GO!</button><br>
+                    <button class="btn btn-warning" id="pause" disabled="disabled">Pause</button><br>
+                    <button class="btn btn-info" id="clear" >Clear</button><br>
+
+                    <!-- <button class="btn btn-default" id="pauseGameButton">Draw Glider</button>f -->
+                    <!-- <p class="status">Status: paused</p> -->
+                </div>
+                <div class="col-md-11" id="game">
+                    <script> new GameOfLife() </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
